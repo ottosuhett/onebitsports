@@ -1,0 +1,22 @@
+.nav-footer{
+    @include nav-container-mix(flex, space-between, 0.1px solid #000000,#454545,#FFFFFF, 2rem, 8rem , 100%);
+    height: 6rem;
+    .footer-logo{
+        width: 15rem;
+    }
+    .go-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer-text{
+            text-decoration: none; 
+            color: #FFFFFF;
+            font-size: 2rem;
+            &:hover{
+             cursor: pointer;
+            }
+        }
+    }
+}
+
+

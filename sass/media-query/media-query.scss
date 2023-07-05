@@ -1,0 +1,47 @@
+@media(max-width:1385px){
+    .main-section{
+        gap: 10rem;
+    }
+}
+@media(max-width:1069px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        width: 40rem;
+        .card-img{
+            height: 15rem;
+        }
+        .card-description{
+            font-size: 2.5rem;
+        }
+    }
+}
+@media(max-width:880px){
+    .main-section{
+        gap:1.5rem;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .text-content{
+        font-size: 2.5rem;
+    }
+    .subtitle{
+        font-size: 2rem;
+    }
+}
+@media(max-width:480px){
+    .nav-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .card{
+        width: 70%;
+    }
+    .sidebar-card{
+        width: 20rem;
+    } 
+} 

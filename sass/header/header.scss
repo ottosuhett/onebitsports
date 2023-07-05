@@ -1,0 +1,32 @@
+@mixin nav-container-mix($display, $justify,$border,$background-color,$color,$padding,$height,$width){
+    display: $display;
+    justify-content: $justify;
+    border: $border;
+    background-color:$background-color;
+    color: $color;
+    padding: $padding;
+    height:$height;
+    width: $width;
+}
+.nav-container{
+    @include nav-container-mix(flex, space-between, 0.1px solid #000000,#454545,#FFFFFF, 2rem, 8rem , 100%);
+    .logo{
+        width: 20rem;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .menu-list{
+            display: flex;
+            gap:3rem;
+            .menu-list-content{
+                font-size: 2rem;
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+
+}
